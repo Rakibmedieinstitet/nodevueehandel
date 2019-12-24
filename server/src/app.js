@@ -8,11 +8,12 @@ app.use(morgan("tiny"));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get("/home", (req, res)=>{
+app.post("/register", (req, res)=>{
     res.send({
-        namn:"Rakib's hemsida"
+        namn: `${req.body.email} was registered`
 
     })
+    
     
 })
 
