@@ -1,6 +1,11 @@
 module.exports = {
     "env": {
-        "node": true,
+         "node": {
+      "extensions": [
+        ".js",
+        ".jsx"
+      ]
+    },
         "es6": true
     },
     "extends": "eslint:recommended",
